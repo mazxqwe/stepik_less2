@@ -18,7 +18,7 @@
         <ul class="navbar-nav">
           {%for key, value in departures.items%}
            <li class="nav-item {%if flight_from == value %}active{%endif%}">
-            <a class="nav-link" href="#">{{ value }}</a>
+            <a class="nav-link" href="/departure/{{ key }}">{{ value }}</a>
           </li>
           {%endfor%}
         </ul>
