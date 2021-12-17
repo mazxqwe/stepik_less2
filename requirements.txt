@@ -1,4 +1,3 @@
-gunicasgiref==3.4.1
 backports.zoneinfo==0.2.1
 Django==4.0
 flake8==4.0.1
