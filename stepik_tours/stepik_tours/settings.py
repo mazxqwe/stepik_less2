@@ -12,12 +12,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import django_heroku
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
+# Build paths inside the proMIDDLEWAREject like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -55,6 +53,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'stepik_tours.urls'
 
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 TEMPLATES = [
     {
